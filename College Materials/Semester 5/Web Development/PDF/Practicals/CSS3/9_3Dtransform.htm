@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+div#myDiv {
+    -webkit-transform: rotateX(150deg); /* Safari */
+    transform: rotateX(180deg); /* Standard syntax */
+}
+div#myDiv1 {
+    background-color: green;
+    
+	-webkit-transform: rotateY(150deg); /* Safari */
+    transform: rotateY(150deg); /* Standard syntax */
+}
+div.simple {
+    width: 300px;
+    height: 100px;
+    background-color: blue;
+    border: 1px solid black;
+}
+
+div#myDiv2 {
+    -webkit-transform: rotateZ(90deg); /* Safari */
+    transform: rotateZ(100deg); /* Standard syntax */
+}
+<
+</style>
+</head>
+<body>
+
+<div>
+This a normal div element.
+</div>
+
+<div id="myDiv">
+The rotateX() method rotates an element around its X-axis at a given degree. This div element is rotated 150 degrees.
+</div>
+<div id="myDiv1">
+The rotateY() method rotates an element around its Y-axis at a given degree. This div element is rotated 150 degrees.
+</div>
+<div class="simple">
+This a normal div element.
+</div>
+
+<div id="myDiv2">
+The rotateZ() method rotates an element around its Z-axis at a given degree. This div element is rotated 90 degrees.
+</div>
+<p><b>Note:</b> Internet Explorer 9 (and earlier versions) does not support the rotateX() method.</p>
+
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+<head>
+<title>Form Validation</title>
+<script src="valid.js" language="javascript"></script>
+</head>
+<body>
+ <form name="myForm" action="welcome.html" onsubmit="return(validate());">
+ <table cellspacing="2" cellpadding="2" border="1">
+ <tr>
+   <td align="right">Name</td>
+   <td><input type="text" name="Name" /></td>
+ </tr>
+  <tr>
+   <td align="right">Password</td>
+   <td> <input type="password" name="passid" size="12" /></td>
+ </tr>
+  <tr>
+   <td align="right">Gender</td>
+   <td><input type="radio" name="gen" value="Male" /><span>Male</span><br/>
+<input type="radio" name="gen" value="Female" /><span>Female</span></td>
+ </tr>
+ <tr>
+   <td align="right">EMail</td>
+   <td><input type="text" name="EMail" /></td>
+ </tr>
+ <tr>
+   <td align="right">Zip Code</td>
+   <td><input type="text" name="Zip" /></td>
+ </tr>
+ <tr>
+ <td align="right">Country</td>
+ <td>
+ <select name="Country">
+   <option value="-1" selected>[choose yours]</option>
+   <option value="1">USA</option>
+   <option value="2">UK</option>
+   <option value="3">INDIA</option>
+ </select>
+ <tr>
+<td align="right">Language </td>
+ <td> <input type="checkbox" name="eng" value="en" /><span>English</span>
+ <br/><input type="checkbox" name="guj" value="noen" /><span>Gujarati</span></td>
+ </tr>
+ </td>
+ </tr>
+ <tr>
+   <td align="right"></td>
+   <td><input type="submit" value="Submit" /></td>
+ </tr>
+ </table>
+ </form>
+ </body>
+ </html>

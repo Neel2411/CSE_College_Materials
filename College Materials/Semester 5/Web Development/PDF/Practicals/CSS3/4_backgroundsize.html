@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.div1 {
+    border: 1px solid black;
+    height:200px;
+    width:150px;
+    background:url(tree.png);
+    background-repeat: no-repeat;
+}
+
+.div2 {
+    border: 1px solid black;
+    height:100px;
+    width:100px;
+    background:url(tree.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.div3 {
+    border: 1px solid black;
+    height:150px;
+    width:150px;
+    background:url(tree.png);
+    background-repeat: no-repeat;
+    background-size: covor;
+}
+</style>
+</head>
+<body>
+
+<p>Original image:</p>
+<div class="div1">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Using the "contain" keyword: <br/>
+Resize the background image to make sure the image is fully visible</p>
+<div class="div2">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+<p>Using the "cover" keyword: <br/>
+Resize the background image to cover the entire container, even if it has to stretch the image or cut a little bit off one of the edges</p>
+<div class="div3">
+<p>Lorem ipsum dolor sit amet.</p>
+</div>
+
+</body>
+</html>
