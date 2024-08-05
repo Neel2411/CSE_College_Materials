@@ -1,0 +1,16 @@
+mvi a, 66h
+sta 2060h
+mvi a, 77h
+sta 2080h
+
+LXI H,2060H
+LXI D,2080H
+
+MOV B,M
+
+LDAX D
+MOV M,A
+
+MOV A,B
+STAX D
+HLT

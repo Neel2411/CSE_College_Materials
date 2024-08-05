@@ -1,0 +1,15 @@
+	MVI A, 20H
+STA 2050H
+   	MVI A, 30H
+STA 2051H
+LHLD 2050H
+	   XCHG
+	   MOV C,D
+	   MVI D,00H
+	   LXI H,0000H
+
+L1:	   DAD D
+	   DCR C
+	   JNZ L1
+	   SHLD 3050H
+	   HLT

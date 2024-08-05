@@ -1,0 +1,16 @@
+	   MVI C,00
+		MVI A, 0FH
+STA 3500
+MVI A, 0FH
+STA 3501
+	   LHLD 3500
+	   MOV A,L
+	   ADD H
+	   DAA
+	   JNC L1
+	   INR C
+
+L1:	   STA 3502
+	   MOV A,C
+	   STA 3503
+	   HLT

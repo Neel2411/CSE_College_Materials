@@ -1,0 +1,8 @@
+mvi a, 33h
+sta 2042h
+LXI H,2042H
+MOV A,M
+CMA
+INR A
+MOV M,A
+HLT

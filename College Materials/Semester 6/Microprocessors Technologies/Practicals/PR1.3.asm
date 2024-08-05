@@ -1,0 +1,7 @@
+
+IN  07H
+OUT 00H
+IN 08H
+MOV B,A
+
+HLT
