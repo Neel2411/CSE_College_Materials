@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1691306882 source:d:\college\class\{#seventh semester#}\information and network security\practicals\ins-6(2)\main.c
+	<stdio.h>
+	<string.h>
+	<ctype.h>
+
